@@ -1,5 +1,5 @@
 project:
-  name: ml-project-template
+  name: banking-intent-classifier
   version: 0.1.0
 
 model:

@@ -1,6 +1,6 @@
-# ML Project Template
+# Banking Intent Classifier
 
-Production-ready template for building scable ML applications.
+Production-ready NLP service for classifying banking customer intents.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FasrAPI-API-green)
