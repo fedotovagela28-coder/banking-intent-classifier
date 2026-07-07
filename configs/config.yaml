@@ -1,0 +1,17 @@
+project:
+  name: ml-project-template
+  version: 0.1.0
+
+model:
+  name: baseline-model
+  path: artifacts/model.pkl
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+
+training:
+  random_state: 42
+
+validation:
+  test_size: 0.2
