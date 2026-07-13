@@ -1,10 +1,12 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 class PredictionRequest(BaseModel):
-    text: str = Field(..., min_length=1)
+    text: str
 
 class PredictionResponse(BaseModel):
-    prediction: str
+    intent: str
+    confidence: float
+
 
 class HealthResponse(BaseModel):
     status: str

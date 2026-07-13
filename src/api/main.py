@@ -27,4 +27,4 @@ def health() -> HealthResponse:
 @app.post("/predict", response_model=PredictionResponse)
 def predict(request: PredictionRequest) -> PredictionResponse:
     prediction = prediction_service.predict(request.text)
-    return PredictionResponse(prediction=prediction)
+    return PredictionResponse(intent=prediction["intent"], confidence=prediction["confidence"])
